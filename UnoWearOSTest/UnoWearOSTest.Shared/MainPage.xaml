@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="UnoWearOSTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoWearOSTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid toolkit:VisibleBoundsPadding.PaddingMask="All">
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="5">
+        <TextBlock Text="Hello, world!"
+                   FontSize="20" />
+                <Button Content="Accelerometer"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnAccelerometer_Click"/>
+                <Button Content="Geolocator"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnGeolocator_Click" />
+                <Button Content="Vibrate"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnVibration_Click" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
