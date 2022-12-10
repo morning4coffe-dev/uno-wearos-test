@@ -2,9 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.UnoWearOSTest" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="33" />
   <application android:label="UnoWearOSTest"></application>
-<uses-permission android:name="android.permission.VIBRATE" />
-<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+	<!--Vibration-->
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<!--Pedometer-->
+	<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+	<!--Geolocator-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<!--Network-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

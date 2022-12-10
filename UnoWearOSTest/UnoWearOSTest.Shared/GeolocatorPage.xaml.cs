@@ -38,12 +38,12 @@ namespace UnoWearOSTest {
         }
 
         private void UpdateValues(Geocoordinate geo, int round = 4) {
-            LongitudeText.Text = $"Longitude: {MathF.Round((float)geo.Longitude, round)} °";
-            LatitudeText.Text = $"Latitude: {MathF.Round((float)geo.Latitude, round)} °";
-            AltitudeText.Text = $"Altitude: {MathF.Round((float?)geo.Altitude ?? 0f, round)} m";
-            HeadingText.Text = $"Heading: {MathF.Round((float?)geo.Heading ?? 0f, round)} °";
-            SpeedText.Text = $"Speed: {MathF.Round((float?)geo.Speed ?? 0f, round)} m/s";
-            AccuracyText.Text = $"Accuracy: {MathF.Round((float)geo.Accuracy, round)} m";
+            LongitudeText.Text = $"Longitude: {Math.Round((float)geo.Longitude, round)} °";
+            LatitudeText.Text = $"Latitude: {Math.Round((float)geo.Latitude, round)} °";
+            AltitudeText.Text = $"Altitude: {Math.Round((float?)geo.Altitude ?? 0f, round)} m";
+            HeadingText.Text = $"Heading: {Math.Round((float?)geo.Heading ?? 0f, round)} °";
+            SpeedText.Text = $"Speed: {Math.Round((float?)geo.Speed ?? 0f, round)} m/s";
+            AccuracyText.Text = $"Accuracy: {Math.Round((float)geo.Accuracy, round)} m";
         }
 
         public void OnBackButton_Click(object sender, RoutedEventArgs e) {

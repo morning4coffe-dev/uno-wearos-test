@@ -15,7 +15,6 @@ namespace UnoWearOSTest {
 
         public async void Innit() {
             _pedometer = await Pedometer.GetDefaultAsync();
-            _pedometer.ReportInterval = 10000;
 
             StepsText.Text = "Waiting for data...";
 

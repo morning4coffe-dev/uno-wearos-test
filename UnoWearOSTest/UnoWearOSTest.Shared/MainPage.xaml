@@ -19,12 +19,19 @@
                 <Button Content="Accelerometer"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnAccelerometer_Click"/>
+                
                 <Button Content="Geolocator"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnGeolocator_Click" />
+                
                 <Button Content="Pedometer"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnPedometer_Click" />
+
+                <Button Content="Light sensor"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnLights_Click" />
+
                 <Button Content="Vibrate"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnVibration_Click" />
