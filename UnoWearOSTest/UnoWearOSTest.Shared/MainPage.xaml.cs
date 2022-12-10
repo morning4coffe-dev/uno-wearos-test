@@ -14,9 +14,12 @@ namespace UnoWearOSTest {
         }
 
         public void OnGeolocator_Click(object sender, RoutedEventArgs e) {
-            ShellPage.Current.Frame.Navigate(typeof(AccelerometerPage));
+            ShellPage.Current.Frame.Navigate(typeof(GeolocatorPage));
         }
 
+        public void OnPedometer_Click(object sender, RoutedEventArgs e) {
+            ShellPage.Current.Frame.Navigate(typeof(PedometerPage));
+        }
         public void OnVibration_Click(object sender, RoutedEventArgs e) {
             var vibrationDevice = VibrationDevice.GetDefault();
             if(vibrationDevice is not null)

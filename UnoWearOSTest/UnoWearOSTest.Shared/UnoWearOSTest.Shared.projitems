@@ -15,6 +15,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PedometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GeolocatorPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AccelerometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -26,6 +27,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ShellPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)PedometerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)GeolocatorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
