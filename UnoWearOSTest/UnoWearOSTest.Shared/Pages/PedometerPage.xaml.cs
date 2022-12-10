@@ -3,10 +3,8 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using Windows.Devices.Sensors;
 
-namespace UnoWearOSTest {
+namespace UnoWearOSTest.Pages {
     public sealed partial class PedometerPage : Page {
-        private Pedometer _pedometer;
-
         public PedometerPage() {
             this.InitializeComponent();
 
@@ -14,11 +12,12 @@ namespace UnoWearOSTest {
         }
 
         public async void Innit() {
-            _pedometer = await Pedometer.GetDefaultAsync();
+            var pedometer = await Pedometer.GetDefaultAsync();
 
             StepsText.Text = "Waiting for data...";
+            pedometer.ReportInterval = 200;
 
-            _pedometer.ReadingChanged += Pedometer_ReadingChanged;
+            pedometer.ReadingChanged += Pedometer_ReadingChanged;
         }
 
         private void Pedometer_ReadingChanged(Pedometer sender, PedometerReadingChangedEventArgs args) {

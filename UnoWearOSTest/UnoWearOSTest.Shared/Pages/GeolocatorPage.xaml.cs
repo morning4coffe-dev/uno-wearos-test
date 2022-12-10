@@ -3,7 +3,7 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using Windows.Devices.Geolocation;
 
-namespace UnoWearOSTest {
+namespace UnoWearOSTest.Pages {
     public sealed partial class GeolocatorPage : Page {
         public GeolocatorPage() {
             this.InitializeComponent();

@@ -15,36 +15,41 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)LightsPage.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)PedometerPage.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GeolocatorPage.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)AccelerometerPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LightsPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BarometerPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PedometerPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\GeolocatorPage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AccelerometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ShellPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)LightsPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\LightsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)PedometerPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\BarometerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)GeolocatorPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PedometerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)AccelerometerPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\GeolocatorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\AccelerometerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -58,6 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
   <Import Project="UnoWearOSTest.Shared.globs.props" Condition="'$(IsCodeSharingProject)'!='true'" />
 </Project>

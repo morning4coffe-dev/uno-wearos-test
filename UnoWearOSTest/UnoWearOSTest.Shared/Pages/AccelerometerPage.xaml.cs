@@ -3,7 +3,7 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using Windows.Devices.Sensors;
 
-namespace UnoWearOSTest {
+namespace UnoWearOSTest.Pages {
     public sealed partial class AccelerometerPage : Page {
         public AccelerometerPage() {
             this.InitializeComponent();

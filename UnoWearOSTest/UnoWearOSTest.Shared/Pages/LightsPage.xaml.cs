@@ -2,7 +2,7 @@
 using Microsoft.UI.Xaml.Controls;
 using Windows.Devices.Sensors;
 
-namespace UnoWearOSTest {
+namespace UnoWearOSTest.Pages {
     public sealed partial class LightsPage : Page {
         public LightsPage() {
             this.InitializeComponent();

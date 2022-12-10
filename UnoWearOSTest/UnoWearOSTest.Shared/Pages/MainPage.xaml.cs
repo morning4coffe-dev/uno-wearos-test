@@ -5,7 +5,7 @@ using System;
 using Windows.Phone.Devices.Notification;
 #endif
 
-namespace UnoWearOSTest {
+namespace UnoWearOSTest.Pages {
     public sealed partial class MainPage : Page {
         public MainPage() {
             this.InitializeComponent();
@@ -21,6 +21,10 @@ namespace UnoWearOSTest {
 
         public void OnPedometer_Click(object sender, RoutedEventArgs e) {
             ShellPage.Current.Frame.Navigate(typeof(PedometerPage));
+        }
+
+        public void OnBarometer_Click(object sender, RoutedEventArgs e) {
+            ShellPage.Current.Frame.Navigate(typeof(BarometerPage));
         }
 
         public void OnLights_Click(object sender, RoutedEventArgs e) {
