@@ -2,7 +2,7 @@
   <PropertyGroup>
 		<TargetFrameworks>net7.0-android</TargetFrameworks>
 		
-		
+		<RuntimeIdentifier Condition="'$(Configuration)'=='Release'">android-arm</RuntimeIdentifier>
 
 		<!-- Disabled because of https://github.com/xamarin/xamarin-macios/issues/16401--><!--
 		
