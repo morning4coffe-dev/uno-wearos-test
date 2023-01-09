@@ -8,10 +8,10 @@ namespace UnoWearOSTest.Pages {
         public GeolocatorPage() {
             this.InitializeComponent();
 
-            Innit();
+            Init();
         }
 
-        public async void Innit() {
+        public async void Init() {
             var geolocatorAccess = await Geolocator.RequestAccessAsync();
             if(geolocatorAccess == GeolocationAccessStatus.Allowed) {
                 var geolocator = new Geolocator();

@@ -8,10 +8,10 @@ namespace UnoWearOSTest.Pages {
         public BarometerPage() {
             this.InitializeComponent();
 
-            Innit();
+            Init();
         }
 
-        public void Innit() {
+        public void Init() {
             var barometer = Barometer.GetDefault();
 
             //PressureText.Text = "Waiting for data...";

@@ -8,10 +8,10 @@ namespace UnoWearOSTest.Pages {
         public PedometerPage() {
             this.InitializeComponent();
 
-            Innit();
+            Init();
         }
 
-        public async void Innit() {
+        public async void Init() {
             var pedometer = await Pedometer.GetDefaultAsync();
 
             StepsText.Text = "Waiting for data...";

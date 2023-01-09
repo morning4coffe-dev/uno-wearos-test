@@ -7,10 +7,10 @@ namespace UnoWearOSTest.Pages {
         public LightsPage() {
             this.InitializeComponent();
 
-            Innit();
+            Init();
         }
 
-        public void Innit() {
+        public void Init() {
             var lightSensor = LightSensor.GetDefault();
 
             IlluminanceText.Text = "Waiting for the data...";

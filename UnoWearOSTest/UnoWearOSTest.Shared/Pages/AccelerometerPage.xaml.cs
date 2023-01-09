@@ -8,10 +8,10 @@ namespace UnoWearOSTest.Pages {
         public AccelerometerPage() {
             this.InitializeComponent();
 
-            Innit();
+            Init();
         }
 
-        public void Innit() {
+        public void Init() {
             var accelometer = Accelerometer.GetDefault();
 
             //GetCurrentReading not implemented
