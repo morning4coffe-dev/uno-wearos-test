@@ -15,6 +15,10 @@ namespace UnoWearOSTest.Pages {
             ShellPage.Current.Frame.Navigate(typeof(AccelerometerPage));
         }
 
+        public void OnMagnetometer_Click(object sender, RoutedEventArgs e) {
+            ShellPage.Current.Frame.Navigate(typeof(MagnetometerPage));
+        }
+
         public void OnGeolocator_Click(object sender, RoutedEventArgs e) {
             ShellPage.Current.Frame.Navigate(typeof(GeolocatorPage));
         }

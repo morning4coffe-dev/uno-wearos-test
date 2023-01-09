@@ -18,7 +18,11 @@
                 <Button Content="Accelerometer"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnAccelerometer_Click"/>
-                
+
+                <Button Content="Magnetometer"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnMagnetometer_Click" />
+
                 <Button Content="Geolocator"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnGeolocator_Click" />

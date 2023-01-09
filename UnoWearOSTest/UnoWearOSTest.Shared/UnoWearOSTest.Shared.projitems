@@ -15,6 +15,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MagnetometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LightsPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BarometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\PedometerPage.xaml.cs" />
@@ -29,6 +30,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ShellPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MagnetometerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\LightsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -63,9 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
   <Import Project="UnoWearOSTest.Shared.globs.props" Condition="'$(IsCodeSharingProject)'!='true'" />
 </Project>
