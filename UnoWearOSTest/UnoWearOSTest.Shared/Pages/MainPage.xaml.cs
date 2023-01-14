@@ -15,6 +15,10 @@ namespace UnoWearOSTest.Pages {
             ShellPage.Current.Frame.Navigate(typeof(AccelerometerPage));
         }
 
+        public void OnBattery_Click(object sender, RoutedEventArgs e) {
+            ShellPage.Current.Frame.Navigate(typeof(BatteryPage));
+        }
+
         public void OnMagnetometer_Click(object sender, RoutedEventArgs e) {
             ShellPage.Current.Frame.Navigate(typeof(MagnetometerPage));
         }

@@ -15,6 +15,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BatteryPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\MagnetometerPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LightsPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BarometerPage.xaml.cs" />
@@ -30,6 +31,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ShellPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\BatteryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\MagnetometerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

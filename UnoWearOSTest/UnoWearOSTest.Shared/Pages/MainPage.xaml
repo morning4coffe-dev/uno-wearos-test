@@ -19,6 +19,10 @@
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnAccelerometer_Click"/>
 
+                <Button Content="Battery"
+                        Style="{StaticResource FilledButtonStyle}"
+                        Click="OnBattery_Click" />
+
                 <Button Content="Magnetometer"
                         Style="{StaticResource FilledButtonStyle}"
                         Click="OnMagnetometer_Click" />
