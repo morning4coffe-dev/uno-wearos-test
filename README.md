@@ -4,8 +4,8 @@
 ## Operating Systems
 - [x] Android
 - [x] WearOS
-- [ ] iOS
-- [ ] WatchOS
+- [ ] iOS - Not tested
+- [ ] WatchOS - Not tested
 
 ## How-to Run It On WearOS
 1. Follow the tutorial on how to install the latest version of [Uno Platform](https://platform.uno/docs/articles/get-started.html) on your computer.
@@ -17,9 +17,10 @@
 7. In Visual Studio, switch to the Android platform and open the project containing the app you want to run. Your WearOS watch should appear under Android Local Devices.
 8. Click on Start Without Debugging to run the app on your watch.
 
+## Workarounds 
+- To see accurate speed and heading information in the Geolocator on your watch, some activity tracking must be enabled first (e.g. Walking, Running, Cycling, etc.)
+
 ## Known Bugs
 - Pedometer doesn't report initial data and `GetCurrentReadings()` is not currently supported in UNO.
 - When a sensor like `Barometer` or `LightSensor`, etc. is not present in the device, the page won't load, nor will it give any information about it.
-- After a long period of testing the speed and heading in `Geolocator` does not report accurate data on the Samsung Galaxy Watch 4 (on phone it is alright).
-- I couldn't get Debugging to work, yet.
-
+- I haven't been able to get debugging to work on the watch yet.
